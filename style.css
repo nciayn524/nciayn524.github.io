@@ -1,3 +1,4 @@
+  /*768〜2560pxの場合*/
 
   img {
   max-width: 100%;
@@ -9,47 +10,50 @@
   font-family: YuGothic,'Yu Gothic',sans-serif;
   }
 
+  .br-sp{
+    display: none;
+  }
+
+
   .header-inner {
   max-width: 1080px;
+  height: 70px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   }
 
   .logo-img {
   width: 130px;
   height: 33px;
-  margin-top: 18px;
-  margin-bottom: 19px;
   }
 
-  .header-btn {
+
+.recruit-btn {
+  display: block;
   width: 151px;
   height: 48px;
+  text-decoration: none;
+  color: #333333;
+  line-height: 48px;
   background-color: #FFE000;
+  text-align: center;
   border-radius: 24px;
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
   box-shadow: 3px 3px 10px #00000029;
-  margin-top: 11px;
-  margin-bottom: 11px;
-  }
-
-  .recruit-btn {
-  color: #333333;
-  text-decoration: none;
-  line-height: 48px;
-  }
+}  
 
   .main-view {
   max-width: 1080px;
+  height: 608px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 80px;
+  align-items: center;
   }
 
   .main-message {
@@ -134,7 +138,7 @@
   justify-content: center; 
   font-weight: bold;
   font-size: 36px;
-  padding-top: 120px;
+  padding-top: 40px;
   line-height: 61px;
   }
 
@@ -186,16 +190,8 @@
 
   .about-ttl {
   padding-bottom: 100px;
+  padding-top: 120px;
   }
-
-  .office-img {
-  margin-left: 40px;
-  }
-
-  .recruit-img {
-  margin-right: 40px;
-  }
-
 
   .about-content {
   display: flex;
@@ -213,7 +209,6 @@
   max-width: 450px;
   }
 
-
   .text-area p {
   font-size: 16px;
   line-height: 27px;
@@ -224,6 +219,14 @@
   width: 450px;
   height: auto;
   box-shadow: 0px 11px 20px #00000029;
+  }
+
+  .office-img {
+  margin-left: 40px;
+  }
+  
+  .recruit-img {
+  margin-right: 40px;
   }
 
   .more-btn {
@@ -248,13 +251,9 @@
   line-height: 54px;
   }
 
-
-  .news {
-  text-align: center;
-  }
-
   .ttl-news {
-  padding-bottom: 101px
+  padding-bottom: 101px;
+  padding-top:120px;
   }
 
   .news-inner {
@@ -265,34 +264,31 @@
   }
 
   .news-content {
-  display: flex;
   border-top: 1px solid #D6D6D6;
-  position: relative;
-  height: 204px;
+  display: flex;
   align-items: center;
+  height: 205px;
+  position: relative;  /* ニュース記事全体にリンクをはる用*/
   }
 
-  .news-content a{
-  text-decoration: none;
-  color: #333333;
+.news-link{
+  /* ニュース記事全体にリンクをはる用*/
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  }
+  height: 100%;
+}
 
   .news-content img {
   width: 300px;
   height: 168px;
   margin-right: 34px;
   margin-bottom: 18px;
+  margin-top: 18px;
   }
 
-  .text-area{
-  margin-top: auto;
-  margin-bottom: auto;
-  }
+
 
   .textarea-inf {
   display: flex;
@@ -340,36 +336,39 @@
   .news-btn {
   margin-top: 50px;
   margin-bottom: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   }
 
 
   footer {
   background-color: #E8E8E8;
-  height: 135px;
-  text-align: center;
   }
 
   .footer-inner{
   max-width: 1080px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
+  box-sizing: border-box;
   }
 
   .footer-top {
+  padding-top: 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   }
 
   .footer-logo {
   width: 70px;
   height: 70px;
-  margin-top: 25px;
   }
 
   .footer-nav ul{
   display: flex;
   justify-content: flex-end;
-  margin-top: 50px;
   }
 
   .footer-nav li{
@@ -381,6 +380,7 @@
   font-size: 14px;
   color: #333333;
   line-height: 24px;
+  padding-right: 18px;
   }
 
   .footer-nav li + li{
@@ -388,10 +388,16 @@
   padding-left: 18px;
   }
 
+  .copyright{
+    height: 40px;
+    align-items: center;
+  }
 
-  footer small {
-  font-size: 14px;
-  padding-top: 12px;
+  small {
+    font-size: 14px;
+    line-height: 40px;
+    display: block;
+    margin: auto;
   }
 
 
@@ -404,10 +410,11 @@
   .main-view {
   max-width: 100%;
   padding: 0px 15px;
+  display: flex;
   }
 
-  .main-img img {
-  max-width: 100%;
+  .main-message{
+    width: 50%;
   }
 
   .main-copy{
@@ -417,6 +424,11 @@
   .copy {
   padding-bottom: 20px;
   line-height: 27px;
+  width: 100%;
+  }
+
+  .main-img img{
+    width: 100%;
   }
 
   .content-wrapper img{
@@ -428,13 +440,24 @@
   padding: 0px 15px;
   }
 
-  .about-content{
-  padding: 0px 15px;
+  .about-container{
+  box-sizing: border-box;
   }
 
-  .text-area{
-  padding-top: 50px;
+  .about-content{
+  padding: 0px 15px;
+  max-width: 100%;
   }
+
+.office-img{
+  margin-left: 0;
+  width: 50%;
+}
+
+.recruit-img{
+  margin-right: 0;
+}
+
 
   .text-area p{
   text-align-last: left;
@@ -452,14 +475,6 @@
   }
 
 
-
-  @media screen and (min-width:1079px){
-  .br-sp {
-  display: none;
-  }
-  }
-
-
   @media screen and (max-width:767px ){
 
 
@@ -469,20 +484,23 @@
   margin-left: 15px;
   }
 
+  .header-btn {
+    margin-right: 15px;
+    }
+
   .main-view {
-  flex-direction: column-reverse;
-  box-sizing: border-box;
+    height: auto;
+    flex-direction: column-reverse;
   }
 
-  .header-btn {
-  margin-right: 15px;
-  }
+
 
   .main-img img{
   width: 100%;
   height: auto;
   text-align: center;
   margin-top: 10px;
+  display: block;
   }
 
 
@@ -527,14 +545,14 @@
   margin-left: 17px;
   }
 
-  article {
+  section {
   max-width: 100%;
   }
 
   .service-contents {
   flex-direction: column;
   align-items: center;
-  width: 100%;
+
   }
 
   .content-wrapper{
@@ -547,6 +565,7 @@
 
   .about-container {
   display: block;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   }
@@ -554,29 +573,38 @@
   .about-content{
   flex-direction: column-reverse;
   align-items: center;
-
+  box-sizing: border-box;
   }
 
   .about-content:nth-child(even){
   flex-direction: column-reverse;
-  }
-
-  .about-content img {
-  width: 100%;
-  height: auto;
-  margin: 0;
-
-  }
-
-  .text-area {
-  text-align: center;
-  width: 100%;
   box-sizing: border-box;
-
+  margin-top: 70px;
   }
+
+.office-txt{
+  margin-right: 40px;
+}
+
+  .office-img{
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .recruit-img{
+    margin-bottom: 39px;
+  }
+
+  .more-btn{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
 
   h3 {
   text-align: left;
+  margin-bottom: 19px;
   }
 
   .ttl-news {
@@ -608,12 +636,9 @@
   padding-bottom: 18px;
   }
 
-  footer{
-  height: 289px;
-  }
 
   .footer-logo{
-  margin-top: 30px;
+  margin-top: 5px;
   }
 
   .footer-top{
@@ -636,11 +661,12 @@
   border-left: none;
   margin-top: 12px;
   padding-left: 0px;
+  padding-right: 0px;
   }
 
-  footer small{
+  small{
   display: block;
-  padding-bottom: 20px;
-  padding-top: 40px;
+  margin-top: 20px;
   }
+
   }
