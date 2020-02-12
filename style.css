@@ -249,6 +249,7 @@
   color: #109954;
   font-size: 32px;
   line-height: 54px;
+  margin-bottom: 19px;
   }
 
   .ttl-news {
@@ -260,7 +261,6 @@
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  border-bottom: 1px solid #D6D6D6;
   }
 
   .news-content {
@@ -268,7 +268,13 @@
   display: flex;
   align-items: center;
   height: 205px;
+  padding-top: 19px;
+  padding-bottom: 18px;
   position: relative;  /* ニュース記事全体にリンクをはる用*/
+  }
+
+  .news-content:last-of-type {
+    border-bottom: 1px solid #D6D6D6;
   }
 
 .news-link{
@@ -314,7 +320,6 @@
   font-weight: bold;
   text-align: center;
   line-height: 26px;
-  line-height: 24px;
   }
 
   .news-ttl {
@@ -375,17 +380,21 @@
   line-height: 24px;
   }
 
+
   .footer-nav a {
   text-decoration: none;
   font-size: 14px;
   color: #333333;
   line-height: 24px;
-  padding-right: 18px;
   }
 
   .footer-nav li + li{
   border-left: 1px solid #333;
   padding-left: 18px;
+  }
+
+  li:not(:nth-child(4)){
+  padding-right: 18px;
   }
 
   .copyright{
@@ -417,8 +426,10 @@
     width: 50%;
   }
 
+
   .main-copy{
   line-height: 48px;
+  font-size: 28px;
   }
 
   .copy {
@@ -464,6 +475,14 @@
   line-height: 27px;
   }
 
+  .office-txt{
+    padding-right: 40px;
+  }
+
+  .recruit-txt{
+    padding-left: 40px;
+  }
+
   .news-inner {
   padding: 0px 10px;
   }
@@ -481,7 +500,6 @@
   .logo-img {
   width: 110px;
   height: 28px;
-  margin-left: 15px;
   }
 
   .header-btn {
@@ -493,7 +511,10 @@
     flex-direction: column-reverse;
   }
 
-
+.br-sp{
+  display: block;
+  line-height: 48px;
+}
 
   .main-img img{
   width: 100%;
@@ -503,7 +524,9 @@
   display: block;
   }
 
-
+  .main-message{
+    width: 100%;
+  }
   .main-copy {
   margin-top: 10px;
   text-align: center;
@@ -525,19 +548,24 @@
 
   .contact-btn {
   margin-bottom: 15px;
+  margin-right: 0px;
   }
 
   h2 {
   padding-top: 100px;
   font-size: 28px;
+  padding-right: 15px;
+  padding-left: 15px;
   }
 
   h2:before,
   h2:after {
   border-top: 4px solid  #109954;
   content: "";
-  width:93px;
+  flex-grow: 1;
   }
+
+  
   h2:before {
   margin-right: 17px;
   }
@@ -582,17 +610,22 @@
   margin-top: 70px;
   }
 
-.office-txt{
-  margin-right: 40px;
-}
+  .office-txt{
+    padding-right: 0px;
+  }
 
   .office-img{
     width: 50%;
     margin-bottom: 50px;
   }
 
+
   .recruit-img{
     margin-bottom: 39px;
+  }
+
+  .recruit-txt{
+    padding-left: 0px;
   }
 
   .more-btn{
@@ -604,7 +637,6 @@
 
   h3 {
   text-align: left;
-  margin-bottom: 19px;
   }
 
   .ttl-news {
@@ -657,12 +689,16 @@
   margin-right: 0px;
   }
 
+  .footer-nav li{
+  padding-right: 0px;
+  }
+
   .footer-nav li + li{
   border-left: none;
   margin-top: 12px;
   padding-left: 0px;
-  padding-right: 0px;
   }
+
 
   small{
   display: block;
